@@ -39,7 +39,7 @@ tags:
 3.Python多个超类的方法解析顺序
 如下图的继承关系所示：
 
-![image](../img/blog-conten/继承关系.png)
+![image](../img/blog-content/继承关系.png)
 
     在Python有至少3种不同的MRO解析方法
     1.经典方法：采用了一种很简单的 MRO 方法：从左至右的深度优先遍历其查找顺序为
