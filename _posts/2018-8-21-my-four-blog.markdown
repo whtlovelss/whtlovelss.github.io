@@ -15,9 +15,10 @@ tags:
     一:在python的语法中并没有像Java那样有专门的声明定义接口的存在，它是依靠抽象类
 实现完成的。使用abc模块，@abstractmethod是声明抽象函数的，@abstractproperty声明
 抽象属性。
-      ```
-        from abc import ABCMeta,abstractmethod
 
+      ```
+
+        from abc import ABCMeta,abstractmethod
         class Payment(metaclass=ABCMeta):
             @abstractmethod                 #调用@abstractmethod规定子类必须有pay方法
             def pay(self,money):
@@ -32,7 +33,7 @@ tags:
     ---
     sudo pip install python-interface
     ---
-    ***
+
     抽象接口
     ```
     from interface import Interface
@@ -57,7 +58,7 @@ tags:
         def method2(self, arg1, arg2):
             return "method2"
     ```
-    ***
+    
     以上就是比较常用的两种python接口使用的方式
 
 2.鸭子类型
@@ -125,5 +126,3 @@ tags:
     a，b，c，d都是A类型的变量，所以可以得到预期的效果（从java角度的预期），e并不是A类型的变量但是根
     据鸭子类型，走起来像鸭子、游泳起来像鸭子、叫起来也像鸭子，那么这只鸟就可以被称为鸭子，e有prt方法，
     所以在test方法中e就是一个A类型的变量，f没有prt方法，所以f不是A类型的变量。
-
-      
