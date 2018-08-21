@@ -2,7 +2,7 @@
 layout:     post
 title:      "Python技术小结二"
 subtitle:   "python小知识 "
-date:       2018-08-20 19:45:00
+date:       2018-08-21 14:45:00
 author:     "Makes.Z"
 header-img: "img/post-think-try-write.jpg"
 tags:
@@ -17,7 +17,6 @@ tags:
 抽象属性。
 
       ```
-
         from abc import ABCMeta,abstractmethod
         class Payment(metaclass=ABCMeta):
             @abstractmethod                 #调用@abstractmethod规定子类必须有pay方法
@@ -30,9 +29,9 @@ tags:
             obj = Wechatpay()
       ```
     二:还可以使用第三方提供的python接口，zope.interface和python-interface，使用
-    ---
+
     sudo pip install python-interface
-    ---
+
 
     抽象接口
     ```
@@ -58,14 +57,14 @@ tags:
         def method2(self, arg1, arg2):
             return "method2"
     ```
-    
+
     以上就是比较常用的两种python接口使用的方式
 
 2.鸭子类型
     在python中有一种很特殊的类型称之为鸭子类型，那么什么叫鸭子类型呢。
-    ---
+
     “当看到一只鸟走起来像鸭子、游泳起来像鸭子、叫起来也像鸭子，那么这只鸟就可以被称为鸭子。”
-    ---
+
     在鸭子类型中，关注的不是对象类型的本身，而是如何使用该对象。
 
     ```
