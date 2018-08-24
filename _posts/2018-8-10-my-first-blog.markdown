@@ -61,4 +61,4 @@ tags:
 $ who are you ?
 ```
 
-![](./image/1.jpg)
+![]({{./image/1.jpg}})
